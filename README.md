@@ -16,9 +16,11 @@
 
 ## Notas
 - Como determinar endereço ip do container:
-docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
+  - docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
 - Conectar com banco de dados:
-psql -U postgres -h 172.20.0.2
+  - psql -U postgres -h 172.20.0.2
+
+## migrações
 - Criar ou alterar uma tabela:
 migrate create -ext sql -dir database/migrations -seq create_users_table
 - Para rodar as migrações:

@@ -3,12 +3,14 @@
 services:
 
   db:
-    image: postgres
+    image: postgres:latest
     restart: always
+    container_name: megasena
     volumes:
       - postgres-data:/var/lib/postgresql/data
     environment:
-      POSTGRES_PASSWORD: senha
+      POSTGRES_PASSWORD: yuhhe&87GHKfd
+      POSTGRES_USER: mega_user
 volumes:
   postgres-data:
   

@@ -1,7 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"github.com/gin-gonic/gin"
+	"github.com/heronhurpia/loterias/server"
+)
 
 func main() {
-	fmt.Println("Hello")
+
+	// Lista de rotas
+	router := gin.Default()
+	router.Static("/templates", "./templates")
+	router.LoadHTMLGlob("templates/view/*")
+	router.Get("/", welcome)
+	router.Run("localhost:8080")
+}
+
+func welcome(c *gin.Context) {
+	server.Welcome(c)
 }
