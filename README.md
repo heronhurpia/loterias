@@ -22,8 +22,8 @@
 
 ## migrações
 - Criar ou alterar uma tabela:
-migrate create -ext sql -dir database/migrations -seq create_users_table
+  - migrate create -ext sql -dir database/migrations -seq create_users_table
 - Para rodar as migrações:
-migrate -path database/migrations -database "postgresql://postgres:bolao_password@172.20.0.2:5432/postgres?sslmode=disable" -verbose up
+  - migrate -path database/migrations -database "postgresql://postgres:bolao_password@172.20.0.2:5432/postgres?sslmode=disable" -verbose up
 
 export POSTGRESQL_URL='postgres://postgres:password@localhost:5432/example?sslmode=disable'
