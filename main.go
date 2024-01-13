@@ -10,8 +10,8 @@ func main() {
 	// Lista de rotas
 	router := gin.Default()
 	router.Static("/templates", "./templates")
-	router.LoadHTMLGlob("templates/view/*")
-	router.Get("/", welcome)
+	router.LoadHTMLGlob("templates/views/*")
+	router.GET("/", welcome)
 	router.Run("localhost:8080")
 }
 
