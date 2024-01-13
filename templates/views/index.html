@@ -1,41 +1,10 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
 
+<!--index.html-->
 
-    <link rel="icon" href="/templates/images/logo-century.png">
-    <link rel="stylesheet" href="/templates/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/templates/css/bootstrap-icons.css">
+<!--Embed the header.html template at this location-->
+{{ template "header.html" .}}
 
-    <script src="/templates/js/jquery-3.7.1.min.js"></script>
-    <script src="/templates/js/bootstrap.js"></script>
+  <h1>Hello Gin!</h1>
 
-</head>
-  <body>
-
-    <div class="container mt-5">
-      
-      <h1>Hello, world!</h1>
-
-      <ul class="list-group">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-        <li class="list-group-item">A fourth item</li>
-        <li class="list-group-item">And a fifth one</li>
-        <li class="list-group-item">
-          <button name="save" class="btn" type="submit">
-            <i class="bi bi-save">&nbsp;Salvar</i>
-          </button>
-        </li>
-      </ul>
-    </div>
-
-  </body>
-</html>
-
-
-
+<!--Embed the footer.html template at this location-->
+{{ template "footer.html" .}}

@@ -1,0 +1,26 @@
+<!--header.html-->
+
+<!doctype html>
+<html>
+
+<head>
+    <!--Use the `title` variable to set the title of the page-->
+    <title>{{ .title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <!--Use bootstrap to make the application look nice-->
+    <link rel="icon" href="/templates/images/logo-century.png">
+    <link rel="stylesheet" href="/templates/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/templates/css/bootstrap-icons.css">
+
+    <script src="/templates/js/jquery-3.7.1.min.js"></script>
+    <script src="/templates/js/bootstrap.js"></script>
+</head>
+
+<body class="container">
+    <!--Embed the menu.html template at this location-->
+    {{ template "menu.html" . }}
+
+   
+
