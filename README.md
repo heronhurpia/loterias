@@ -4,9 +4,9 @@
 - [ ] Verificar API para busca de dados
 - [ ] Fazer a adaptação para dispositivo móvel
 - [ ] Criar página com dados do grupo
-- [ ] Criar página da megasena
-- [ ] Criar página da quina
-- [ ] Criar página da lotofácil
+- [x] Criar página da megasena
+- [x] Criar página da quina
+- [x] Criar página da lotofácil
 - [x] Criar e testar migrações
 - [x] Fazer teste de conexão com dB
 - [x] Criar pacote de acesso ao banco de dados
