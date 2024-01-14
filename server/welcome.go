@@ -8,6 +8,7 @@ import (
 
 func Welcome(c *gin.Context) {
 
-	//c.HTML(http.StatusOK, "index.html", gin.H{})
-	c.HTML(http.StatusOK, "index.html", gin.H{})
+	c.HTML(http.StatusOK, "welcome.html", gin.H{
+		"title": "Benvindo",
+	})
 }

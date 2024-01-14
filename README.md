@@ -1,12 +1,18 @@
 # Loterias
 
 ## Ações
-- [ ] Criar e testar migrações
-- [ ] Fazer teste de conexão com dB
-- [ ] Criar pacote de acesso ao banco de dados
-- [ ] Exibir erro se conexão não for do tipo pgsql
-- [ ] Criar arquivo .env e .env-backup
-- [ ] Criar teste unitário para executar migrações
+- [ ] Verificar API para busca de dados
+- [ ] Fazer a adaptação para dispositivo móvel
+- [ ] Criar página com dados do grupo
+- [ ] Criar página da megasena
+- [ ] Criar página da quina
+- [ ] Criar página da lotofácil
+- [x] Criar e testar migrações
+- [x] Fazer teste de conexão com dB
+- [x] Criar pacote de acesso ao banco de dados
+- [x] Exibir erro se conexão não for do tipo pgsql
+- [x] Criar arquivo .env e .env-backup
+- [x] Criar teste unitário para executar migrações
   
 ## Megasena
 
