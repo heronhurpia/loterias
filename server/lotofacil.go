@@ -8,7 +8,7 @@ import (
 
 func Lotofacil(c *gin.Context) {
 
-	c.HTML(http.StatusOK, "quina.html", gin.H{
-		"title": "Benvindo",
+	c.HTML(http.StatusOK, "lotofacil.html", gin.H{
+		"title": "Benvindo lotofacil",
 	})
 }

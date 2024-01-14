@@ -8,7 +8,7 @@ import (
 
 func Megasena(c *gin.Context) {
 
-	c.HTML(http.StatusOK, "quina.html", gin.H{
+	c.HTML(http.StatusOK, "megasena.html", gin.H{
 		"title": "Benvindo",
 	})
 }

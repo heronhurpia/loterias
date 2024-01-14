@@ -12,5 +12,10 @@ func main() {
 	router.Static("/templates", "./templates")
 	router.LoadHTMLGlob("templates/views/*")
 	router.GET("/", server.Welcome)
+	router.GET("/welcome", server.Welcome)
+	router.GET("/lotofacil", server.Lotofacil)
+	router.GET("/group", server.Group)
+	router.GET("/quina", server.Quina)
+	router.GET("/megasena", server.Megasena)
 	router.Run("localhost:8080")
 }
