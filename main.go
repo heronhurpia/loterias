@@ -17,5 +17,8 @@ func main() {
 	router.GET("/group", server.Group)
 	router.GET("/quina", server.Quina)
 	router.GET("/megasena", server.Megasena)
+	router.GET("/login", server.Login)
+	router.GET("/register", server.Register)
+
 	router.Run("localhost:8080")
 }

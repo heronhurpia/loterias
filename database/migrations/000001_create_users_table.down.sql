@@ -1,1 +1,1 @@
-drop TABLE if exists loterias.users ;
+drop TABLE if exists users ;
