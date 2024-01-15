@@ -3,7 +3,13 @@
 ## Ações
 - [ ] Verificar API para busca de dados
 - [ ] Fazer a adaptação para dispositivo móvel
+- [ ] Criar acesssos somente a usuários logados
 - [ ] Criar página com dados do grupo
+- [ ] Criar página de cadastro de usuário
+- [ ] Criar página de criação de grupo
+- [ ] Criar login
+- [ ] Trocar icone da página
+- [ ] Fazer download do HTMX localmente
 - [x] Criar página da megasena
 - [x] Criar página da quina
 - [x] Criar página da lotofácil

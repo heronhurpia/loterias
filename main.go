@@ -20,5 +20,7 @@ func main() {
 	router.GET("/login", server.Login)
 	router.GET("/register", server.Register)
 
+	router.POST("/process-form", server.SubmitForm)
+
 	router.Run("localhost:8080")
 }

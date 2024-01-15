@@ -5,13 +5,69 @@
 {{ template "header.html" .}}
 
 <div class="container">
+	<div class="row justify-content-center pt-5">
+		<div class="col-md-8">
+			<div class="card">
+				<div class="card-header">
+					Faça seu cadastro e escolha seu grupo
+				</div>
+				<div class="card-body">
 
-  <h3>Benvindo grupo</h3>
 
-  <p>Nome do grupo</p>
-  <p>Nome</p>
-  <p>email</p>
-  <p>senha</p>
+          <div class="container mb-5">
+            <form hx-post="/process-form" hx-target="#response">
+              <label for="name">Name:</label><br>
+              <input class="form-control" type="text" id="name" name="name">
+              <label for="email">Email:</label><br>
+              <input class="form-control" type="email" id="email" name="email">
+              <button type="submit">Submit</button>
+            </form>
+            <div id="response">R: {{.response}}</div>
+            <div id="message">M: {{.message}}</div>
+          </div>
+
+
+					<form method="POST" action="login">
+						<div class="row mb-3">
+							<label for="email" class="col-md-4 col-form-label text-md-end">Email</label>
+
+							<div class="col-md-6">
+								<input id="email" type="email" class="form-control" name="email" value="" required autocomplete="email" autofocus>
+								<span class="invalid-feedback" role="alert">
+									<strong> $message </strong>
+								</span>
+								<div class="alert alert-danger m-3" role="alert">
+									<p class="text-center h4">Atenção!</p>
+									<p>A senha deve ser a mesma usada para entrar no seu PC</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mb-3">
+							<label for="password" class="col-md-4 col-form-label text-md-end">Senha</label>
+
+							<div class="col-md-6">
+								<input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+								<span class="invalid-feedback" role="alert">
+									<strong>$message</strong>
+								</span>
+							</div>
+						</div>
+
+						<div class="row mb-0">
+							<div class="col-md-8 offset-md-4">
+								<button type="submit" class="btn btn-primary">
+									'Login'
+								</button>
+
+		  				</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
  
 
